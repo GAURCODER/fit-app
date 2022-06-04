@@ -16,7 +16,7 @@ Widget _buildRow() {
   return Container(
     padding: const EdgeInsets.all(kDefaultPadding),
     child: Card(
-      color: Colors.black87,
+      color: Color.fromRGBO(243, 234, 234, 0.1),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       child: Column(
         mainAxisSize: MainAxisSize.max,

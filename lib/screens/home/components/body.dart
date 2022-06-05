@@ -6,139 +6,141 @@ import 'package:flutter/material.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[_steps(), _sleep()],
+    return ListView(
+      children: <Widget>[
+        _cardWithProgressBar("Steps", "7896", "/10000", Colors.green),
+        _cardWithProgressBar("Sleep", "8", "hrs", Colors.purple),
+        _cardWithButton("Calories", "56", "cal", "Add food"),
+      ],
     );
   }
 }
 
-Widget _steps() {
+Widget _cardWithProgressBar(
+    String title, String text1, String text2, Color barColor) {
   return Container(
-    padding: const EdgeInsets.all(kDefaultPadding),
+    padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
     child: Card(
       color: Color.fromRGBO(243, 234, 234, 0.1),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: kDefaultPadding, vertical: kDefaultPadding / 2),
-            child: Row(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+            vertical: kDefaultPadding / 2, horizontal: kDefaultPadding),
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Expanded(
+                child: Column(
+              mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
                 Text(
-                  "Steps",
+                  title,
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                 ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: kDefaultMargin, vertical: kDefaultPadding / 2),
-            child: Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      "7896",
-                      style: TextStyle(
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),
-                    ),
-                    Text(
-                      "/10000",
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.only(top: kDefaultPadding / 2),
+                  child: Row(
+                    children: [
+                      Text(
+                        text1,
+                        style: TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
-                    )
-                  ],
-                ),
+                      Text(
+                        text2,
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            )),
+            Column(
+              children: [
                 CustomPaint(
                   child: Container(
                     width: 100,
                   ),
-                  painter: ProgressBar(Colors.green),
-                )
+                  painter: ProgressBar(barColor),
+                ),
               ],
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     ),
   );
 }
 
-Widget _sleep() {
+Widget _cardWithButton(
+    String title, String text1, String text2, String btnText) {
   return Container(
-    padding: const EdgeInsets.all(kDefaultPadding),
+    padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
     child: Card(
       color: Color.fromRGBO(243, 234, 234, 0.1),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: kDefaultPadding, vertical: kDefaultPadding / 2),
-            child: Row(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+            vertical: kDefaultPadding / 2, horizontal: kDefaultPadding),
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Expanded(
+                child: Column(
+              mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
                 Text(
-                  "Sleep",
+                  title,
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                 ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: kDefaultMargin, vertical: kDefaultPadding / 2),
-            child: Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      "8",
-                      style: TextStyle(
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),
-                    ),
-                    Text(
-                      "hrs",
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.only(top: kDefaultPadding / 2),
+                  child: Row(
+                    children: [
+                      Text(
+                        text1,
+                        style: TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
-                    )
-                  ],
-                ),
-                CustomPaint(
-                  child: Container(
-                    width: 100,
+                      Text(
+                        text2,
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
                   ),
-                  painter: ProgressBar(Colors.purple),
                 )
               ],
-            ),
-          )
-        ],
+            )),
+            Column(
+              children: [
+                ElevatedButton.icon(
+                    onPressed: () {},
+                    icon: Icon(Icons.add, size: 18),
+                    label: Text(btnText))
+              ],
+            )
+          ],
+        ),
       ),
     ),
   );

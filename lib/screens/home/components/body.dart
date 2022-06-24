@@ -1,15 +1,84 @@
-import 'dart:math';
+// import 'dart:math';
 
 import 'package:fit_app/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:pedometer/pedometer.dart';
+import 'dart:async';
 
-class Body extends StatelessWidget {
+// String formatDate(DateTime d) {
+//   return d.toString().substring(0, 19);
+// }
+
+class Body extends StatefulWidget {
+  const Body({Key? key}) : super(key: key);
+
+  @override
+  State<Body> createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  late Stream<StepCount> _stepCountStream;
+  late Stream<PedestrianStatus> _pedestrianStatusStream;
+  String _status = '?', _steps = "0";
+  @override
+  void initState() {
+    super.initState();
+    initPlatformState();
+  }
+
+  void onStepCount(StepCount event) {
+    print("step taken");
+    setState(() {
+      _steps = event.steps.toString();
+    });
+  }
+
+  void onPedestrianStatusChanged(PedestrianStatus event) {
+    print(event);
+    setState(() {
+      _status = event.status;
+    });
+  }
+
+  void onPedestrianStatusError(error) {
+    print('onPedestrianStatusError: $error');
+    setState(() {
+      _status = 'Pedestrian Status not available';
+    });
+    print(_status);
+  }
+
+  void onStepCountError(error) {
+    print('onStepCountError: $error');
+    setState(() {
+      _steps = 'Step Count not available';
+    });
+  }
+
+  void initPlatformState() {
+    _pedestrianStatusStream = Pedometer.pedestrianStatusStream;
+    _pedestrianStatusStream
+        .listen(onPedestrianStatusChanged)
+        .onError(onPedestrianStatusError);
+
+    _stepCountStream = Pedometer.stepCountStream;
+    _stepCountStream.listen(onStepCount).onError(onStepCountError);
+
+    if (!mounted) return;
+  }
+
+  int intoInt(String s) {
+    return int.parse(s);
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
-        _cardWithProgressBar("Steps", "7896", "/10000", Colors.green),
-        _cardWithProgressBar("Sleep", "8", "hrs", Colors.purple),
+        _cardWithProgressBar("Steps", _steps, "/10000",
+            const Color.fromARGB(255, 34, 230, 41), 10000),
+        _cardWithProgressBar(
+            "Sleep", "8", "hrs", const Color.fromARGB(255, 197, 39, 225), 8),
         _cardWithButton("Calories", "56", "cal", "Add food"),
       ],
     );
@@ -17,15 +86,15 @@ class Body extends StatelessWidget {
 }
 
 Widget _cardWithProgressBar(
-    String title, String text1, String text2, Color barColor) {
+    String title, String text1, String text2, Color barColor, int total) {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
     child: Card(
-      color: Color.fromRGBO(243, 234, 234, 0.1),
+      color: const Color.fromRGBO(243, 234, 234, 0.1),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            vertical: kDefaultPadding / 2, horizontal: kDefaultPadding),
+            vertical: kDefaultPadding, horizontal: kDefaultPadding),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -37,7 +106,7 @@ Widget _cardWithProgressBar(
               children: <Widget>[
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
@@ -48,14 +117,14 @@ Widget _cardWithProgressBar(
                     children: [
                       Text(
                         text1,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 28,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
                       Text(
                         text2,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 20,
                           color: Colors.white,
                         ),
@@ -71,7 +140,7 @@ Widget _cardWithProgressBar(
                   child: Container(
                     width: 100,
                   ),
-                  painter: ProgressBar(barColor),
+                  painter: ProgressBar(barColor, int.parse(text1), total),
                 ),
               ],
             )
@@ -87,11 +156,11 @@ Widget _cardWithButton(
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
     child: Card(
-      color: Color.fromRGBO(243, 234, 234, 0.1),
+      color: const Color.fromRGBO(243, 234, 234, 0.1),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            vertical: kDefaultPadding / 2, horizontal: kDefaultPadding),
+            vertical: kDefaultPadding, horizontal: kDefaultPadding),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -103,7 +172,7 @@ Widget _cardWithButton(
               children: <Widget>[
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
@@ -114,14 +183,14 @@ Widget _cardWithButton(
                     children: [
                       Text(
                         text1,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 28,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
                       Text(
                         text2,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 20,
                           color: Colors.white,
                         ),
@@ -135,7 +204,7 @@ Widget _cardWithButton(
               children: [
                 ElevatedButton.icon(
                     onPressed: () {},
-                    icon: Icon(Icons.add, size: 18),
+                    icon: const Icon(Icons.add, size: 18),
                     label: Text(btnText))
               ],
             )
@@ -148,12 +217,14 @@ Widget _cardWithButton(
 
 class ProgressBar extends CustomPainter {
   Color lineColor;
-  ProgressBar(this.lineColor);
+  int lineWidth;
+  int totalwidth;
+  ProgressBar(this.lineColor, this.lineWidth, this.totalwidth);
 
   @override
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
-    double percent = 0.5;
+    double percent = lineWidth / totalwidth;
     var paint = Paint()
       ..color = Colors.white38
       ..strokeWidth = 10.0

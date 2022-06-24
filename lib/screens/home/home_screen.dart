@@ -15,9 +15,22 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Fit_app"),
+        title: const Text(
+          "Fitness App",
+          style: TextStyle(fontSize: 23),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.menu_rounded),
+            onPressed: () {
+              Colors.blue;
+              // ignore: avoid_print
+              print('Menu button pressed');
+            },
+          ),
+        ],
       ),
-      body: Body(),
+      body: const Body(),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),

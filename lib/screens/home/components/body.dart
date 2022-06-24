@@ -4,6 +4,9 @@ import 'dart:math';
 import 'package:fit_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
+import 'package:charts_flutter/flutter.dart' as charts;
+import 'SensorData.dart';
+import 'SensorDataChart.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -12,19 +15,23 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   List<double>? _accelerometerValues;
+  final List<SensorData> data = [
+    SensorData(x: 10.0, y: 1.0, z: 2.0),
+    SensorData(x: 9.1, y: 1.2, z: 2.3),
+  ];
   final _streamSubscriptions = <StreamSubscription<dynamic>>[];
 
-  @override
-  void initState() {
-    super.initState();
-    _streamSubscriptions
-        .add(accelerometerEvents.listen((AccelerometerEvent event) {
-      setState(() {
-        _accelerometerValues = <double>[event.x, event.y, event.z];
-      });
-      print(_accelerometerValues);
-    }));
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _streamSubscriptions
+  //       .add(accelerometerEvents.listen((AccelerometerEvent event) {
+  //     setState(() {
+  //       _accelerometerValues = <double>[event.x, event.y, event.z];
+  //     });
+  //     print(_accelerometerValues);
+  //   }));
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +40,7 @@ class _BodyState extends State<Body> {
         _cardWithProgressBar("Steps", "7896", "/10000", Colors.green),
         _cardWithProgressBar("Sleep", "8", "hrs", Colors.purple),
         _cardWithButton("Calories", "56", "cal", "Add food"),
+        SensorDataChart(data: data)
       ],
     );
   }

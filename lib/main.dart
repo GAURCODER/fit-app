@@ -1,13 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:fit_app/constants.dart';
 import 'package:fit_app/screens/home/home_screen.dart';
+import 'package:fit_app/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
-
-
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: kBackgroundColor,
           ),
           textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor)),
-      home: const HomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }

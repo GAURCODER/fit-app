@@ -1,6 +1,7 @@
 // import 'dart:math';
 
 import 'package:fit_app/constants.dart';
+import 'package:fit_app/screens/home/components/myhomepage.dart';
 import 'package:flutter/material.dart';
 import 'package:pedometer/pedometer.dart';
 import 'dart:async';
@@ -225,6 +226,7 @@ class ProgressBar extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
     double percent = lineWidth / totalwidth;
+    percent = percent > 1.0 ? 1.0 : percent;
     var paint = Paint()
       ..color = Colors.white38
       ..strokeWidth = 10.0

@@ -1,5 +1,6 @@
 import 'package:fit_app/constants.dart';
 import 'package:fit_app/screens/home/components/body.dart';
+import 'package:fit_app/screens/home/components/myhomepage.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,6 +12,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
+  final pages = [const Body(), const MyHomePage(), const Body()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,12 +32,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: const Body(),
+      body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.leaderboard), label: "Leaderboard"),
+              icon: Icon(Icons.leaderboard), label: "Sensor Data"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile")
         ],
         backgroundColor: kBackgroundColor,

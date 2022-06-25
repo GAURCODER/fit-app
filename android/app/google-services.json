@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "267962607339",
+    "project_id": "emailverificationauthenticat",
+    "storage_bucket": "emailverificationauthenticat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267962607339:android:87a17ae68b8659d94300ae",
+        "android_client_info": {
+          "package_name": "com.example.fit_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267962607339-7iap6g8fd8b4g7gnukfbrf6jtlsjgscu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-Tq-MtSILRnDjoh3QSCQyOCbB9Ky4Tmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267962607339-7iap6g8fd8b4g7gnukfbrf6jtlsjgscu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

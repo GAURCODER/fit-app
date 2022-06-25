@@ -15,23 +15,43 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   List<double>? _accelerometerValues;
-  final List<SensorData> data = [
-    SensorData(x: 10.0, y: 1.0, z: 2.0),
-    SensorData(x: 9.1, y: 1.2, z: 2.3),
-  ];
+  List<SensorData> data = [];
   final _streamSubscriptions = <StreamSubscription<dynamic>>[];
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   _streamSubscriptions
-  //       .add(accelerometerEvents.listen((AccelerometerEvent event) {
-  //     setState(() {
-  //       _accelerometerValues = <double>[event.x, event.y, event.z];
-  //     });
-  //     print(_accelerometerValues);
-  //   }));
-  // }
+  void populate(state) {
+    var rng = Random();
+    double time;
+    if (state.length == 0) {
+      time = 0.0;
+    } else {
+      time = state[state.length - 1].time + 1;
+    }
+    state.add(SensorData(time: time, value: rng.nextDouble()));
+    setState(() {
+      data = state;
+    });
+  }
+
+  void infinite() {
+    Future.delayed(Duration(milliseconds: 200), () {
+      populate(data);
+      infinite();
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    infinite();
+
+    // _streamSubscriptions
+    //     .add(accelerometerEvents.listen((AccelerometerEvent event) {
+    //   setState(() {
+    //     _accelerometerValues = <double>[event.x, event.y, event.z];
+    //   });
+    //   print(_accelerometerValues);
+    // }));
+  }
 
   @override
   Widget build(BuildContext context) {

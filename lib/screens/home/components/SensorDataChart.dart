@@ -17,8 +17,8 @@ class SensorDataChart extends StatelessWidget {
       charts.Series(
           id: "Accelerometer",
           data: data,
-          domainFn: (SensorData series, _) => series.x,
-          measureFn: (SensorData series, _) => series.y)
+          domainFn: (SensorData series, _) => series.time,
+          measureFn: (SensorData series, _) => series.value)
     ];
 
     return Container(
@@ -34,9 +34,8 @@ class SensorDataChart extends StatelessWidget {
                       domainAxis: const charts.NumericAxisSpec(
                         tickProviderSpec: charts.BasicNumericTickProviderSpec(
                             zeroBound: false),
-                        viewport: charts.NumericExtents(0.0, 20.0),
                       ),
-                      animate: true)),
+                      animate: false)),
             ],
           ),
         ),

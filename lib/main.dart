@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:fit_app/constants.dart';
+import 'package:fit_app/screens/home/components/myhomepage.dart';
 import 'package:fit_app/screens/home/home_screen.dart';
 import 'package:fit_app/screens/login_screen.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: kBackgroundColor,
           ),
           textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor)),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }

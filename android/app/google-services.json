@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "267962607339",
-    "project_id": "emailverificationauthenticat",
-    "storage_bucket": "emailverificationauthenticat.appspot.com"
+    "project_number": "679834227538",
+    "project_id": "loginverfication-49618",
+    "storage_bucket": "loginverfication-49618.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:267962607339:android:87a17ae68b8659d94300ae",
+        "mobilesdk_app_id": "1:679834227538:android:a52f460bcf40b36b34e08b",
         "android_client_info": {
           "package_name": "com.example.fit_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "267962607339-7iap6g8fd8b4g7gnukfbrf6jtlsjgscu.apps.googleusercontent.com",
+          "client_id": "679834227538-pekiusfte7r5kjq03g70qudfrf7q85pp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC-Tq-MtSILRnDjoh3QSCQyOCbB9Ky4Tmg"
+          "current_key": "AIzaSyBwBMagwCaQxiaxkWa9ownb5dxIO7GOlQY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "267962607339-7iap6g8fd8b4g7gnukfbrf6jtlsjgscu.apps.googleusercontent.com",
+              "client_id": "679834227538-pekiusfte7r5kjq03g70qudfrf7q85pp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -65,6 +65,11 @@ flutter:
 
   assets:
     - assets/images/logo.png
+  fonts:
+    - family: MyFlutterApp # the name of your font family
+      fonts:
+        - asset: assets/images/MyFlutterApp.ttf # your font file name and the directory
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

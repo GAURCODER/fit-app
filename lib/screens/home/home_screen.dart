@@ -1,4 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fit_app/constants.dart';
+import 'package:fit_app/model/user_model.dart';
+import 'package:fit_app/pages/edit_profile.dart';
 import 'package:fit_app/screens/home/components/body.dart';
 import 'package:fit_app/screens/home/components/myhomepage.dart';
 import 'package:flutter/material.dart';
@@ -11,8 +15,24 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  User? user = FirebaseAuth.instance.currentUser;
+  UserModel loggedInUser = UserModel();
+
+  @override
+  void initState() {
+    super.initState();
+    FirebaseFirestore.instance
+        .collection("users")
+        .doc(user!.uid)
+        .get()
+        .then((value) {
+      loggedInUser = UserModel.fromMap(value.data());
+      setState(() {});
+    });
+  }
+
   int _selectedIndex = 0;
-  final pages = [const Body(), const MyHomePage(), const Body()];
+  final pages = [const Body(), const MyHomePage(), SettingsUI()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout\\notification_template_part_chronometer.xml"
+    }
+]

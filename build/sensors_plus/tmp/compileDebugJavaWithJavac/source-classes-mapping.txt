@@ -1,0 +1,2 @@
+dev/fluttercommunity/plus/sensors/BuildConfig.java
+ dev.fluttercommunity.plus.sensors.BuildConfig

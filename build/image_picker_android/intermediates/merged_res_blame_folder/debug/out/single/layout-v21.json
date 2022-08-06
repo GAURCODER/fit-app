@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\92c869102173b90040a16cd6163c342a\\transformed\\core-1.8.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\92c869102173b90040a16cd6163c342a\\transformed\\core-1.8.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\92c869102173b90040a16cd6163c342a\\transformed\\core-1.8.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\92c869102173b90040a16cd6163c342a\\transformed\\core-1.8.0\\res\\layout-v21\\notification_action.xml"
+    }
+]

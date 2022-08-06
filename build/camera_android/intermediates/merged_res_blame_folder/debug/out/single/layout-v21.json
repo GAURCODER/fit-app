@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    }
+]

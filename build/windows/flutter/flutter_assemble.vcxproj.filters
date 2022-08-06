@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaura\OneDrive\Desktop\fit-app\build\windows\CMakeFiles\f1df0c6f543f010a4419f04723289348\flutter_windows.dll.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaura\OneDrive\Desktop\fit-app\build\windows\CMakeFiles\a1150a7f79ba909c60dd37b98ac6a26e\flutter_assemble.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaura\OneDrive\Desktop\fit-app\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\gaura\OneDrive\Desktop\fit-app\build\windows\flutter\CMakeFiles\flutter_assemble" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{76E9773B-0FE2-3A50-8BB0-6D187CED4003}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-watch-v20\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\1c2807822791171db8e7b1195bd65b19\\transformed\\jetified-play-services-auth-20.0.1\\res\\drawable-watch-v20\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-watch-v20\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\1c2807822791171db8e7b1195bd65b19\\transformed\\jetified-play-services-auth-20.0.1\\res\\drawable-watch-v20\\common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-watch-v20\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\1c2807822791171db8e7b1195bd65b19\\transformed\\jetified-play-services-auth-20.0.1\\res\\drawable-watch-v20\\common_google_signin_btn_text_disabled.xml"
+    }
+]

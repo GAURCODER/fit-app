@@ -1,0 +1,308 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.fit_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:4:5-66
+14-->C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+15-->C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:3:5-79
+15-->C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:3:22-76
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->[:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-65
+16-->[:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-62
+17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+17-->[:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-71
+17-->[:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-68
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+18-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+19-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+20    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+20-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+20-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+21    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+21-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
+21-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-76
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
+22-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:22-76
+23
+24    <application
+25        android:name="io.flutter.app.FlutterMultiDexApplication"
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.8.0] C:\Users\gaura\.gradle\caches\transforms-3\92c869102173b90040a16cd6163c342a\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+29        android:label="AltenCare" >
+30        <activity
+31            android:name="com.example.fit_app.MainActivity"
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33            android:exported="true"
+34            android:hardwareAccelerated="true"
+35            android:launchMode="singleTop"
+36            android:theme="@style/LaunchTheme"
+37            android:windowSoftInputMode="adjustResize" >
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                 the Android process has started. This theme is visible to the user
+42                 while the Flutter UI initializes. After that, this theme continues
+43                 to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+46                android:name="io.flutter.embedding.android.NormalTheme"
+47                android:resource="@style/NormalTheme" />
+48
+49            <intent-filter>
+50                <action android:name="android.intent.action.MAIN" />
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+53            </intent-filter>
+54        </activity>
+55        <!--
+56             Don't delete the meta-data below.
+57             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+58        -->
+59        <meta-data
+60            android:name="flutterEmbedding"
+61            android:value="2" />
+62
+63        <service
+63-->[:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+64            android:name="com.google.firebase.components.ComponentDiscoveryService"
+64-->[:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+65            android:directBootAware="true"
+65-->[com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+66            android:exported="false" >
+66-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:66:13-37
+67            <meta-data
+67-->[:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+68                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+68-->[:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+70            <meta-data
+70-->[:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+71-->[:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+73            <meta-data
+73-->[:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+74-->[:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:67:13-69:85
+77                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+77-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:68:17-109
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:69:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:20:13-22:85
+80                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+80-->[com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:21:17-111
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:22:17-82
+82        </service>
+83
+84        <provider
+84-->[:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+85            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+85-->[:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+86            android:authorities="com.example.fit_app.flutter.image_provider"
+86-->[:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+87            android:exported="false"
+87-->[:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+88            android:grantUriPermissions="true" >
+88-->[:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+89            <meta-data
+89-->[:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+90                android:name="android.support.FILE_PROVIDER_PATHS"
+90-->[:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+91                android:resource="@xml/flutter_image_picker_file_paths" />
+91-->[:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+92        </provider>
+93
+94        <receiver
+94-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-15:40
+95            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+95-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-97
+96            android:exported="false" />
+96-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+97        <receiver
+97-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-25:20
+98            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+98-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-101
+99            android:exported="false" >
+99-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+100            <intent-filter>
+100-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-24:29
+101                <action android:name="android.intent.action.BOOT_COMPLETED" />
+101-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-79
+101-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-76
+102                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+102-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-84
+102-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-81
+103                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+103-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-82
+103-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-79
+104                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+104-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:17-82
+104-->[:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:25-79
+105            </intent-filter>
+106        </receiver>
+107
+108        <uses-library
+108-->[androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+109            android:name="androidx.window.extensions"
+109-->[androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+110            android:required="false" />
+110-->[androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+111        <uses-library
+111-->[androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+112            android:name="androidx.window.sidecar"
+112-->[androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+113            android:required="false" />
+113-->[androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+114
+115        <activity
+115-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:27:9-44:20
+116            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+116-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:28:13-80
+117            android:excludeFromRecents="true"
+117-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:29:13-46
+118            android:exported="true"
+118-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:30:13-36
+119            android:launchMode="singleTask"
+119-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:31:13-44
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+120-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:32:13-72
+121            <intent-filter>
+121-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:33:13-43:29
+122                <action android:name="android.intent.action.VIEW" />
+122-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:17-69
+122-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:25-66
+123
+124                <category android:name="android.intent.category.DEFAULT" />
+124-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:17-76
+124-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:27-73
+125                <category android:name="android.intent.category.BROWSABLE" />
+125-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:17-78
+125-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:27-75
+126
+127                <data
+127-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:39:17-42:51
+128                    android:host="firebase.auth"
+128-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:40:21-49
+129                    android:path="/"
+129-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:41:21-37
+130                    android:scheme="genericidp" />
+130-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:42:21-48
+131            </intent-filter>
+132        </activity>
+133        <activity
+133-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:45:9-62:20
+134            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+134-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:46:13-79
+135            android:excludeFromRecents="true"
+135-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:47:13-46
+136            android:exported="true"
+136-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:48:13-36
+137            android:launchMode="singleTask"
+137-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:49:13-44
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+138-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:50:13-72
+139            <intent-filter>
+139-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:51:13-61:29
+140                <action android:name="android.intent.action.VIEW" />
+140-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:17-69
+140-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:25-66
+141
+142                <category android:name="android.intent.category.DEFAULT" />
+142-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:17-76
+142-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:27-73
+143                <category android:name="android.intent.category.BROWSABLE" />
+143-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:17-78
+143-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:27-75
+144
+145                <data
+145-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:39:17-42:51
+146                    android:host="firebase.auth"
+146-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:40:21-49
+147                    android:path="/"
+147-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:41:21-37
+148                    android:scheme="recaptcha" />
+148-->[com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:42:21-48
+149            </intent-filter>
+150        </activity>
+151
+152        <provider
+152-->[com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+153            android:name="com.google.firebase.provider.FirebaseInitProvider"
+153-->[com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+154            android:authorities="com.example.fit_app.firebaseinitprovider"
+154-->[com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+155            android:directBootAware="true"
+155-->[com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+156            android:exported="false"
+156-->[com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+157            android:initOrder="100" />
+157-->[com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+158
+159        <activity
+159-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
+160            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+160-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
+161            android:excludeFromRecents="true"
+161-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
+162            android:exported="false"
+162-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
+163            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+163-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
+164        <!--
+165            Service handling Google Sign-In user revocation. For apps that do not integrate with
+166            Google Sign-In, this service will never be started.
+167        -->
+168        <service
+168-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
+169            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+169-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
+170            android:exported="true"
+170-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+171            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+171-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+172            android:visibleToInstantApps="true" />
+172-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+173
+174        <activity
+174-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+175            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+175-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+176            android:exported="false"
+176-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+177            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+177-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+178
+179        <meta-data
+179-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+180            android:name="com.google.android.gms.version"
+180-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+181            android:value="@integer/google_play_services_version" />
+181-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+182    </application>
+183
+184</manifest>

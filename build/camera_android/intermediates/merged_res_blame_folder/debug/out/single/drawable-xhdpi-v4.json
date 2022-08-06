@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\gaura\\OneDrive\\Desktop\\kaustuv\\fit-app\\build\\camera_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\gaura\\.gradle\\caches\\transforms-3\\6ec7d351e503f8b05584954af1f42a1d\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    }
+]

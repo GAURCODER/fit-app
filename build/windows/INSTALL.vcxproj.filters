@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaura\OneDrive\Desktop\fit-app\build\windows\CMakeFiles\4dc95e4f4190670f6cdf899daf6a0031\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{76E9773B-0FE2-3A50-8BB0-6D187CED4003}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

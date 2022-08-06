@@ -1,0 +1,2 @@
+com/example/pedometer/BuildConfig.java
+ com.example.pedometer.BuildConfig

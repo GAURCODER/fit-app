@@ -1,0 +1,4 @@
+flutter_native_splash:
+  color: "#142f26"
+  image: "assets/images/logo.png"
+  background_image: "assets/images/logo.png"

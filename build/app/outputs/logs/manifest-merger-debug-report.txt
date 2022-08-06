@@ -1,0 +1,489 @@
+-- Merging decision tree log ---
+application
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:5:4-36:19
+MERGED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-26:19
+MERGED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-26:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\gaura\.gradle\caches\transforms-3\f64baf46b4f9d6180e05559649eda5f1\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\gaura\.gradle\caches\transforms-3\f64baf46b4f9d6180e05559649eda5f1\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\gaura\.gradle\caches\transforms-3\e785d4d82e863974e6b5bd4a51a16417\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\gaura\.gradle\caches\transforms-3\e785d4d82e863974e6b5bd4a51a16417\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ce6b9054ab448d87574157aaa7bb0fd\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ce6b9054ab448d87574157aaa7bb0fd\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\c062dde9ba5a4faf443e3e9305a8d528\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\c062dde9ba5a4faf443e3e9305a8d528\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.8.0] C:\Users\gaura\.gradle\caches\transforms-3\92c869102173b90040a16cd6163c342a\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\gaura\.gradle\caches\transforms-3\92c869102173b90040a16cd6163c342a\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\gaura\.gradle\caches\transforms-3\3df408fe27773f8816205b5ebd20b15b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\gaura\.gradle\caches\transforms-3\3df408fe27773f8816205b5ebd20b15b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\gaura\.gradle\caches\transforms-3\d6b904da752feb4d5b2e08fbf918e705\transformed\jetified-threetenabp-1.2.3\AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\gaura\.gradle\caches\transforms-3\d6b904da752feb4d5b2e08fbf918e705\transformed\jetified-threetenabp-1.2.3\AndroidManifest.xml:7:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] C:\Users\gaura\.gradle\caches\transforms-3\92c869102173b90040a16cd6163c342a\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+	android:name
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml
+manifest
+ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:1:1-37:12
+MERGED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:1:1-37:12
+MERGED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
+MERGED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-28:12
+MERGED from [:sensors_plus] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\sensors_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:google_sign_in_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\google_sign_in_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_secure_storage] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_secure_storage\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:flutter_native_splash] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_native_splash\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:fluttertoast] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:pedometer] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\gaura\.gradle\caches\transforms-3\42a0574e53b3eb1d79c7c4f43590e9e7\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\050709682e430fcfdbdc68769b3c8a55\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:17:1-73:12
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\gaura\.gradle\caches\transforms-3\f64baf46b4f9d6180e05559649eda5f1\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\gaura\.gradle\caches\transforms-3\e785d4d82e863974e6b5bd4a51a16417\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.media:media:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\ad2e44c7492fed56825af4297a459e12\transformed\media-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\efbcbf51d18cd2e77d3156d05ac08d6f\transformed\jetified-play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\ac249312b06df90a83df768cfb01e676\transformed\jetified-play-services-auth-base-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\94663c6ff5075b18aab69097288f2324\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ce6b9054ab448d87574157aaa7bb0fd\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\c062dde9ba5a4faf443e3e9305a8d528\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\7d636694b0dc6a75d9d7f3143e2adc28\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\bac498b93fdfceb859a311b14aa53b9e\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\gaura\.gradle\caches\transforms-3\b695c829b085b563d5546c07b800a941\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\32d5c29d27dbe368a1ed9311f229ce29\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\62437ccc9f5098ab9f5681a6aa60e88e\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\eb1a80b2308c72bc36c7baac210c74a5\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\gaura\.gradle\caches\transforms-3\92c869102173b90040a16cd6163c342a\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\gaura\.gradle\caches\transforms-3\c3f2f2703a8b98d0b98ba04914cc8cb3\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\45f337078256cf9e5d8eb383452d2c58\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\gaura\.gradle\caches\transforms-3\7bbb2ce61b36ee3b8de25f56db243f05\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\334ef6d9f0b1020e432769c93af14e05\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\gaura\.gradle\caches\transforms-3\d464160c9749a30cab097f7529e8a4a4\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\gaura\.gradle\caches\transforms-3\3df408fe27773f8816205b5ebd20b15b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\4a54ff93f9d45b7f21f284fc7de99e05\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0fdbe2dfdcc569c7716dfbbacbdb81e2\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\gaura\.gradle\caches\transforms-3\1389639b2d3b677bb2f469e9a21e735d\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\gaura\.gradle\caches\transforms-3\69251b2e08f547ed93f2c927a871f7b0\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\gaura\.gradle\caches\transforms-3\8cac762001c4224e596248411e574dc9\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\gaura\.gradle\caches\transforms-3\fe436c75459c4bc80967d4d9d47e8c00\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\gaura\.gradle\caches\transforms-3\ed1232a03a8a92fce1509b5a6578224a\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\gaura\.gradle\caches\transforms-3\d6b904da752feb4d5b2e08fbf918e705\transformed\jetified-threetenabp-1.2.3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\4a327b458c78f91fce2aaa61366b0533\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\5851aec358701f4eed682262cb1eba6f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:2:5-34
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:1:1-37:12
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:1:1-37:12
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACTIVITY_RECOGNITION
+ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:3:5-79
+	android:name
+		ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:3:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from [:google_sign_in_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\google_sign_in_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\google_sign_in_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-sdk
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml
+MERGED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sensors_plus] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\sensors_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sensors_plus] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\sensors_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\google_sign_in_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\google_sign_in_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_secure_storage] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_secure_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:flutter_secure_storage] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_secure_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:flutter_native_splash] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_native_splash\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_native_splash] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_native_splash\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:pedometer] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:pedometer] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\gaura\.gradle\caches\transforms-3\42a0574e53b3eb1d79c7c4f43590e9e7\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\gaura\.gradle\caches\transforms-3\42a0574e53b3eb1d79c7c4f43590e9e7\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\050709682e430fcfdbdc68769b3c8a55\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\050709682e430fcfdbdc68769b3c8a55\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\gaura\.gradle\caches\transforms-3\f64baf46b4f9d6180e05559649eda5f1\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] C:\Users\gaura\.gradle\caches\transforms-3\f64baf46b4f9d6180e05559649eda5f1\transformed\jetified-firebase-appcheck-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\gaura\.gradle\caches\transforms-3\e785d4d82e863974e6b5bd4a51a16417\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\gaura\.gradle\caches\transforms-3\e785d4d82e863974e6b5bd4a51a16417\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\ad2e44c7492fed56825af4297a459e12\transformed\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\ad2e44c7492fed56825af4297a459e12\transformed\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\efbcbf51d18cd2e77d3156d05ac08d6f\transformed\jetified-play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\efbcbf51d18cd2e77d3156d05ac08d6f\transformed\jetified-play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\ac249312b06df90a83df768cfb01e676\transformed\jetified-play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\ac249312b06df90a83df768cfb01e676\transformed\jetified-play-services-auth-base-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\94663c6ff5075b18aab69097288f2324\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\94663c6ff5075b18aab69097288f2324\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ce6b9054ab448d87574157aaa7bb0fd\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ce6b9054ab448d87574157aaa7bb0fd\transformed\jetified-play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\c062dde9ba5a4faf443e3e9305a8d528\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\c062dde9ba5a4faf443e3e9305a8d528\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\7d636694b0dc6a75d9d7f3143e2adc28\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\7d636694b0dc6a75d9d7f3143e2adc28\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\bac498b93fdfceb859a311b14aa53b9e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\bac498b93fdfceb859a311b14aa53b9e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\gaura\.gradle\caches\transforms-3\b695c829b085b563d5546c07b800a941\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\gaura\.gradle\caches\transforms-3\b695c829b085b563d5546c07b800a941\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\32d5c29d27dbe368a1ed9311f229ce29\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\32d5c29d27dbe368a1ed9311f229ce29\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\62437ccc9f5098ab9f5681a6aa60e88e\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\62437ccc9f5098ab9f5681a6aa60e88e\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\eb1a80b2308c72bc36c7baac210c74a5\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\eb1a80b2308c72bc36c7baac210c74a5\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] C:\Users\gaura\.gradle\caches\transforms-3\92c869102173b90040a16cd6163c342a\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\gaura\.gradle\caches\transforms-3\92c869102173b90040a16cd6163c342a\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\gaura\.gradle\caches\transforms-3\c3f2f2703a8b98d0b98ba04914cc8cb3\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\gaura\.gradle\caches\transforms-3\c3f2f2703a8b98d0b98ba04914cc8cb3\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\45f337078256cf9e5d8eb383452d2c58\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\45f337078256cf9e5d8eb383452d2c58\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\gaura\.gradle\caches\transforms-3\7bbb2ce61b36ee3b8de25f56db243f05\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\gaura\.gradle\caches\transforms-3\7bbb2ce61b36ee3b8de25f56db243f05\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\334ef6d9f0b1020e432769c93af14e05\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\334ef6d9f0b1020e432769c93af14e05\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\gaura\.gradle\caches\transforms-3\d464160c9749a30cab097f7529e8a4a4\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\gaura\.gradle\caches\transforms-3\d464160c9749a30cab097f7529e8a4a4\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\gaura\.gradle\caches\transforms-3\3df408fe27773f8816205b5ebd20b15b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\gaura\.gradle\caches\transforms-3\3df408fe27773f8816205b5ebd20b15b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\4a54ff93f9d45b7f21f284fc7de99e05\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\4a54ff93f9d45b7f21f284fc7de99e05\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0fdbe2dfdcc569c7716dfbbacbdb81e2\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0fdbe2dfdcc569c7716dfbbacbdb81e2\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\gaura\.gradle\caches\transforms-3\1389639b2d3b677bb2f469e9a21e735d\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\gaura\.gradle\caches\transforms-3\1389639b2d3b677bb2f469e9a21e735d\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\gaura\.gradle\caches\transforms-3\69251b2e08f547ed93f2c927a871f7b0\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\gaura\.gradle\caches\transforms-3\69251b2e08f547ed93f2c927a871f7b0\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\gaura\.gradle\caches\transforms-3\8cac762001c4224e596248411e574dc9\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\gaura\.gradle\caches\transforms-3\8cac762001c4224e596248411e574dc9\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\gaura\.gradle\caches\transforms-3\fe436c75459c4bc80967d4d9d47e8c00\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\gaura\.gradle\caches\transforms-3\fe436c75459c4bc80967d4d9d47e8c00\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\gaura\.gradle\caches\transforms-3\ed1232a03a8a92fce1509b5a6578224a\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\gaura\.gradle\caches\transforms-3\ed1232a03a8a92fce1509b5a6578224a\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\gaura\.gradle\caches\transforms-3\d6b904da752feb4d5b2e08fbf918e705\transformed\jetified-threetenabp-1.2.3\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\gaura\.gradle\caches\transforms-3\d6b904da752feb4d5b2e08fbf918e705\transformed\jetified-threetenabp-1.2.3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\4a327b458c78f91fce2aaa61366b0533\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\4a327b458c78f91fce2aaa61366b0533\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\5851aec358701f4eed682262cb1eba6f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\gaura\.gradle\caches\transforms-3\5851aec358701f4eed682262cb1eba6f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\android\app\src\debug\AndroidManifest.xml
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:66:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
+ADDED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:cloud_firestore] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
+ADDED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_auth] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
+ADDED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+uses-permission#android.permission.CAMERA
+ADDED from [:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from [:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from [:camera_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\camera_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-68
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+	android:exported
+		ADDED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+	android:resource
+		ADDED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+	android:name
+		ADDED from [:image_picker_android] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-76
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-15:40
+	android:exported
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-97
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-25:20
+	android:exported
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-101
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-24:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-79
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-76
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-84
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-81
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\gaura\OneDrive\Desktop\kaustuv\fit-app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:25-79
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\gaura\.gradle\caches\transforms-3\579bbf19aee97cc68dc4d2ec46f126aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:13:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\gaura\.gradle\caches\transforms-3\ed1232a03a8a92fce1509b5a6578224a\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\gaura\.gradle\caches\transforms-3\ed1232a03a8a92fce1509b5a6578224a\transformed\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:22-76
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:33:13-43:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:39:17-42:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:41:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:40:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:42:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:51:13-61:29
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:67:13-69:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:69:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\gaura\.gradle\caches\transforms-3\eedadd1b5bf28b5113bfb433b51799d1\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:68:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.2.0] C:\Users\gaura\.gradle\caches\transforms-3\936eaeec910d6f240487b70365012350\transformed\jetified-firebase-firestore-24.2.0\AndroidManifest.xml:21:17-111
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.1.1] C:\Users\gaura\.gradle\caches\transforms-3\a7edce2388a8e2a49bd7a9e0f53f2087\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.0.1] C:\Users\gaura\.gradle\caches\transforms-3\1c2807822791171db8e7b1195bd65b19\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\gaura\.gradle\caches\transforms-3\947fd2bbb0680efbae046107249d902f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\gaura\.gradle\caches\transforms-3\0ac01e65be1c365ac38d78e7706a9433\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58

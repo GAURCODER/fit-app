@@ -1,285 +1,17 @@
-// // import 'dart:math';
-
-// import 'package:fit_app/constants.dart';
-// import 'package:fit_app/screens/home/components/myhomepage.dart';
-// import 'package:flutter/material.dart';
-// import 'package:pedometer/pedometer.dart';
-// import 'package:sensors_plus/sensors_plus.dart';
-// import 'dart:async';
-
-// // String formatDate(DateTime d) {
-// //   return d.toString().substring(0, 19);
-// // }
-
-// class Body extends StatefulWidget {
-//   const Body({Key? key}) : super(key: key);
-
-//   @override
-//   State<Body> createState() => _BodyState();
-// }
-
-// class _BodyState extends State<Body> {
-//   late Stream<StepCount> _stepCountStream;
-//   late Stream<PedestrianStatus> _pedestrianStatusStream;
-//   String _status = '?', _steps = "0";
-//   final _streamSubscriptions = <StreamSubscription<dynamic>>[];
-//   bool check = false;
-//   @override
-//   void initState() {
-//     super.initState();
-//     initPlatformState();
-//     _streamSubscriptions
-//         .add(userAccelerometerEvents.listen((UserAccelerometerEvent event) {
-//       if (((event.x).abs() >= 6 && (event.y).abs() >= 6) ||
-//           ((event.y).abs() >= 6 && (event.z).abs() >= 6) ||
-//           ((event.z).abs() >= 6 && (event.x).abs() >= 6)) {
-//         setState(() {
-//           check = true;
-//         });
-//         Future.delayed(const Duration(seconds: 20), () {
-//           setState(() {
-//             check = false;
-//           });
-//         });
-//       }
-//       setState(() {});
-//     }));
-//   }
-//   }
-
-//   void onStepCount(StepCount event) {
-//     print("step taken");
-//     setState(() {
-//       _steps = event.steps.toString();
-//     });
-//   }
-
-//   void onPedestrianStatusChanged(PedestrianStatus event) {
-//     print(event);
-//     setState(() {
-//       _status = event.status;
-//     });
-//   }
-
-//   void onPedestrianStatusError(error) {
-//     print('onPedestrianStatusError: $error');
-//     setState(() {
-//       _status = 'Pedestrian Status not available';
-//     });
-//     print(_status);
-//   }
-
-//   void onStepCountError(error) {
-//     print('onStepCountError: $error');
-//     setState(() {
-//       _steps = 'Step Count not available';
-//     });
-//   }
-
-//   void initPlatformState() {
-//     _pedestrianStatusStream = Pedometer.pedestrianStatusStream;
-//     _pedestrianStatusStream
-//         .listen(onPedestrianStatusChanged)
-//         .onError(onPedestrianStatusError);
-
-//     _stepCountStream = Pedometer.stepCountStream;
-//     _stepCountStream.listen(onStepCount).onError(onStepCountError);
-
-//     if (!mounted) return;
-//   }
-
-//   int intoInt(String s) {
-//     return int.parse(s);
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return ListView(
-//       children: <Widget>[
-//         _cardWithProgressBar("Steps", _steps, "/10000",
-//             const Color.fromARGB(255, 34, 230, 41), 10000),
-//         _cardWithProgressBar(
-//             "Sleep", "8", "hrs", const Color.fromARGB(255, 197, 39, 225), 8),
-//         _cardWithButton("Calories", "56", "cal", "Add food"),
-//         check? _cardWithButton("Calories", "56", "cal", "Add food"): Container(),
-//       ],
-//     );
-//   }
-// }
-
-// Widget _cardWithProgressBar(
-//     String title, String text1, String text2, Color barColor, int total) {
-//   return Container(
-//     padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
-//     child: Card(
-//       color: const Color.fromRGBO(243, 234, 234, 0.1),
-//       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-//       child: Padding(
-//         padding: const EdgeInsets.symmetric(
-//             vertical: kDefaultPadding, horizontal: kDefaultPadding),
-//         child: Row(
-//           mainAxisSize: MainAxisSize.max,
-//           children: [
-//             Expanded(
-//                 child: Column(
-//               mainAxisSize: MainAxisSize.max,
-//               mainAxisAlignment: MainAxisAlignment.start,
-//               crossAxisAlignment: CrossAxisAlignment.start,
-//               children: <Widget>[
-//                 Text(
-//                   title,
-//                   style: const TextStyle(
-//                       fontSize: 20,
-//                       fontWeight: FontWeight.bold,
-//                       color: Colors.white),
-//                 ),
-//                 Padding(
-//                   padding: const EdgeInsets.only(top: kDefaultPadding / 2),
-//                   child: Row(
-//                     children: [
-//                       Text(
-//                         text1,
-//                         style: const TextStyle(
-//                             fontSize: 28,
-//                             fontWeight: FontWeight.bold,
-//                             color: Colors.white),
-//                       ),
-//                       Text(
-//                         text2,
-//                         style: const TextStyle(
-//                           fontSize: 20,
-//                           color: Colors.white,
-//                         ),
-//                       )
-//                     ],
-//                   ),
-//                 )
-//               ],
-//             )),
-//             Column(
-//               children: [
-//                 CustomPaint(
-//                   child: Container(
-//                     width: 100,
-//                   ),
-//                   painter: ProgressBar(barColor, int.parse(text1), total),
-//                 ),
-//               ],
-//             )
-//           ],
-//         ),
-//       ),
-//     ),
-//   );
-// }
-
-// Widget _cardWithButton(
-//     String title, String text1, String text2, String btnText) {
-//   return Container(
-//     padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
-//     child: Card(
-//       color: const Color.fromRGBO(243, 234, 234, 0.1),
-//       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-//       child: Padding(
-//         padding: const EdgeInsets.symmetric(
-//             vertical: kDefaultPadding, horizontal: kDefaultPadding),
-//         child: Row(
-//           mainAxisSize: MainAxisSize.max,
-//           children: [
-//             Expanded(
-//                 child: Column(
-//               mainAxisSize: MainAxisSize.max,
-//               mainAxisAlignment: MainAxisAlignment.start,
-//               crossAxisAlignment: CrossAxisAlignment.start,
-//               children: <Widget>[
-//                 Text(
-//                   title,
-//                   style: const TextStyle(
-//                       fontSize: 20,
-//                       fontWeight: FontWeight.bold,
-//                       color: Colors.white),
-//                 ),
-//                 Padding(
-//                   padding: const EdgeInsets.only(top: kDefaultPadding / 2),
-//                   child: Row(
-//                     children: [
-//                       Text(
-//                         text1,
-//                         style: const TextStyle(
-//                             fontSize: 28,
-//                             fontWeight: FontWeight.bold,
-//                             color: Colors.white),
-//                       ),
-//                       Text(
-//                         text2,
-//                         style: const TextStyle(
-//                           fontSize: 20,
-//                           color: Colors.white,
-//                         ),
-//                       )
-//                     ],
-//                   ),
-//                 )
-//               ],
-//             )),
-//             Column(
-//               children: [
-//                 ElevatedButton.icon(
-//                     onPressed: () {},
-//                     icon: const Icon(Icons.add, size: 18),
-//                     label: Text(btnText))
-//               ],
-//             )
-//           ],
-//         ),
-//       ),
-//     ),
-//   );
-// }
-
-// class ProgressBar extends CustomPainter {
-//   Color lineColor;
-//   int lineWidth;
-//   int totalwidth;
-//   ProgressBar(this.lineColor, this.lineWidth, this.totalwidth);
-
-//   @override
-//   void paint(Canvas canvas, Size size) {
-//     // TODO: implement paint
-//     double percent = lineWidth / totalwidth;
-//     percent = percent > 1.0 ? 1.0 : percent;
-//     var paint = Paint()
-//       ..color = Colors.white38
-//       ..strokeWidth = 10.0
-//       ..strokeCap = StrokeCap.round;
-
-//     canvas.drawLine(
-//         Offset(0, size.height / 2), Offset(size.width, size.height / 2), paint);
-//     paint.color = lineColor;
-//     canvas.drawLine(Offset(0, size.height / 2),
-//         Offset(percent * size.width, size.height / 2), paint);
-//   }
-
-//   @override
-//   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-//     // TODO: implement shouldRepaint
-//     return false;
-//   }
-// }
-
-
-// import 'dart:math';
-
+import 'dart:math';
 import 'package:fit_app/constants.dart';
 import 'package:fit_app/screens/home/components/myhomepage.dart';
 import 'package:flutter/material.dart';
 import 'package:pedometer/pedometer.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'dart:async';
+import '../../icon.dart';
+import 'package:syncfusion_flutter_gauges/gauges.dart';
+import 'package:fit_app/screens/home/components/heart_bpm.dart';
+import 'package:heart_bpm/heart_bpm.dart';
 
-// String formatDate(DateTime d) {
-//   return d.toString().substring(0, 19);
-// }
+bool check = false;
+Valbp ob = new Valbp();
 
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
@@ -288,16 +20,25 @@ class Body extends StatefulWidget {
   State<Body> createState() => _BodyState();
 }
 
-class _BodyState extends State<Body> {
+class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
   late Stream<StepCount> _stepCountStream;
   late Stream<PedestrianStatus> _pedestrianStatusStream;
+  late AnimationController animationController;
+  late Animation _animation;
+  String waterConsumed = "0";
   String _status = '?', _steps = "0";
-  bool check = false;
+  // bool check = false;
   final _streamSubscriptions = <StreamSubscription<dynamic>>[];
+  bool isExpanded = true;
   @override
   void initState() {
     super.initState();
     initPlatformState();
+    animationController =
+        AnimationController(vsync: this, duration: Duration(seconds: 1));
+
+    _animation =
+        CurvedAnimation(parent: animationController, curve: Curves.easeInOut);
     _streamSubscriptions
         .add(userAccelerometerEvents.listen((UserAccelerometerEvent event) {
       if (((event.x).abs() >= 6 && (event.y).abs() >= 6) ||
@@ -363,160 +104,378 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: <Widget>[
-        _cardWithProgressBar("Steps", _steps, "/10000",
-            const Color.fromARGB(255, 34, 230, 41), 10000),
-        _cardWithProgressBar(
-            "Sleep", "8", "hrs", const Color.fromARGB(255, 197, 39, 225), 8),
-        _cardWithButton("Calories", "56", "cal", "Add food"),
-        check ? _cardWithButton("Fall", "Fall", "", "") : Container(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              height: 500,
+              child: GridView.count(
+                crossAxisCount: 2,
+                crossAxisSpacing: 10.0,
+                mainAxisSpacing: 10.0,
+                childAspectRatio: 0.7,
+                children: [
+                  _card("Steps", Color(0xFFFDC830), Color(0xFFF37335),
+                      'assets/images/running.png', _steps, 10000),
+                  _card("Sleep", Color(0xFF4e54c8), Color(0xFF8f94fb),
+                      'assets/images/sleep.png', '4', 8),
+                  _cardHeartbeat("Heartbeat", Color(0xFF00b09b),
+                      Color(0xFF96c93d), 'assets/images/heartbeat.png'),
+                  _cardwithheart("Water", Color(0xFF00B4DB), Color(0xFF0083B0),
+                      'assets/images/water-glass.png', waterConsumed, 10),
+                ],
+              ),
+            ),
+            check ? showAlert() : Container(),
+          ],
+        ),
+      ),
     );
   }
-}
 
-Widget _cardWithProgressBar(
-    String title, String text1, String text2, Color barColor, int total) {
-  return Container(
-    padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
-    child: Card(
-      color: const Color.fromRGBO(243, 234, 234, 0.1),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(
-            vertical: kDefaultPadding, horizontal: kDefaultPadding),
-        child: Row(
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            Expanded(
-                child: Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  title,
-                  style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
+  Widget _card(String header, Color start, Color end, String imagePath,
+      String value, int goal) {
+    return Stack(children: [
+      Container(
+        width: 500,
+        height: 500,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(12)),
+            gradient: LinearGradient(
+                begin: Alignment(-1.0, -4.0),
+                end: Alignment(1.0, 4.0),
+                colors: [
+                  start,
+                  end,
+                ]),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black54,
+                blurRadius: 5.0,
+              )
+            ]),
+        child: Column(children: [
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: kDefaultPadding / 4,
+                    vertical: kDefaultPadding / 2),
+                child: Text(
+                  header,
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: kDefaultPadding / 2),
-                  child: Row(
-                    children: [
-                      Text(
-                        text1,
-                        style: const TextStyle(
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
+              )
+            ],
+          ),
+          Expanded(
+            child: Container(
+              child: Stack(alignment: Alignment.center, children: [
+                SfRadialGauge(axes: <RadialAxis>[
+                  RadialAxis(
+                      showLabels: false,
+                      showTicks: false,
+                      minimum: 0,
+                      maximum: 100,
+                      radiusFactor: 0.9,
+                      axisLineStyle: AxisLineStyle(
+                          thickness: 0.2,
+                          thicknessUnit: GaugeSizeUnit.factor,
+                          cornerStyle: CornerStyle.bothCurve),
+                      pointers: <GaugePointer>[
+                        RangePointer(
+                          value: (intoInt(value) / goal) * 100,
+                          width: 0.2,
+                          sizeUnit: GaugeSizeUnit.factor,
+                          cornerStyle: CornerStyle.bothCurve,
+                          gradient: const SweepGradient(colors: <Color>[
+                            Color(0xFFCC2B5E),
+                            Color(0xFF753A88)
+                          ], stops: <double>[
+                            0.25,
+                            0.75
+                          ]),
+                        )
+                      ]),
+                ]),
+                Text(
+                  value,
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                )
+              ]),
+            ),
+          )
+        ]),
+      ),
+      Positioned(
+        top: 0,
+        left: 168,
+        child: MyArc(100),
+      ),
+      Positioned(
+        top: 8,
+        left: 128,
+        child: Transform(
+          transform: Matrix4.identity()..scale(1 + _animation.value / 20),
+          child: ImageIcon(AssetImage(imagePath)),
+        ),
+      )
+    ]);
+  }
+
+  Widget _cardwithheart(String header, Color start, Color end, String imagePath,
+      String value, int goal) {
+    return Stack(children: [
+      Container(
+        width: 500,
+        height: 500,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(12)),
+            gradient: LinearGradient(
+                begin: Alignment(-1.0, -4.0),
+                end: Alignment(1.0, 4.0),
+                colors: [
+                  start,
+                  end,
+                ]),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black54,
+                blurRadius: 5.0,
+              )
+            ]),
+        child: Column(children: [
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: kDefaultPadding / 4,
+                    vertical: kDefaultPadding / 2),
+                child: Text(
+                  header,
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                ),
+              )
+            ],
+          ),
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                String vit = value;
+                showDialog(
+                  context: context,
+                  builder: (ctx) => AlertDialog(
+                    title: const Text("Water"),
+                    actions: <Widget>[
+                      TextField(
+                        onChanged: (text) {
+                          vit = text;
+                        },
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            labelText: 'Enter the number of glasses',
+                            hintText: 'Water consumed'),
                       ),
-                      Text(
-                        text2,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(ctx).pop();
+                          setState(() {
+                            waterConsumed =
+                                (intoInt(vit) + intoInt(waterConsumed))
+                                    .toString();
+                          });
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(14),
+                          child: const Text("Yes"),
                         ),
-                      )
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(ctx).pop();
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(14),
+                          child: const Text("No"),
+                        ),
+                      ),
                     ],
                   ),
-                )
-              ],
-            )),
-            Column(
-              children: [
-                CustomPaint(
-                  child: Container(
-                    width: 100,
-                  ),
-                  painter: ProgressBar(barColor, int.parse(text1), total),
-                ),
-              ],
-            )
-          ],
-        ),
+                );
+              },
+              child: Container(
+                child: Stack(alignment: Alignment.center, children: [
+                  SfRadialGauge(axes: <RadialAxis>[
+                    RadialAxis(
+                        showLabels: false,
+                        showTicks: false,
+                        minimum: 0,
+                        maximum: 100,
+                        radiusFactor: 0.9,
+                        axisLineStyle: AxisLineStyle(
+                            thickness: 0.2,
+                            thicknessUnit: GaugeSizeUnit.factor,
+                            cornerStyle: CornerStyle.bothCurve),
+                        pointers: <GaugePointer>[
+                          RangePointer(
+                            value: (intoInt(value) / goal) * 100,
+                            width: 0.2,
+                            sizeUnit: GaugeSizeUnit.factor,
+                            cornerStyle: CornerStyle.bothCurve,
+                            gradient: const SweepGradient(colors: <Color>[
+                              Color(0xFFCC2B5E),
+                              Color(0xFF753A88)
+                            ], stops: <double>[
+                              0.25,
+                              0.75
+                            ]),
+                          )
+                        ]),
+                  ]),
+                  Text(
+                    value,
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  )
+                ]),
+              ),
+            ),
+          )
+        ]),
       ),
-    ),
-  );
-}
+      Positioned(
+        top: 0,
+        left: 168,
+        child: MyArc(100),
+      ),
+      Positioned(
+        top: 8,
+        left: 128,
+        child: Transform(
+          transform: Matrix4.identity()..scale(1 + _animation.value / 20),
+          child: ImageIcon(AssetImage(imagePath)),
+        ),
+      )
+    ]);
+  }
 
-Widget _cardWithButton(
-    String title, String text1, String text2, String btnText) {
-  return Container(
-    padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
-    child: Card(
-      color: const Color.fromRGBO(243, 234, 234, 0.1),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(
-            vertical: kDefaultPadding, horizontal: kDefaultPadding),
-        child: Row(
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            Expanded(
-                child: Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  title,
-                  style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
+  Widget _cardHeartbeat(
+      String header, Color start, Color end, String imagePath) {
+    return Stack(children: [
+      Container(
+        width: 250,
+        height: 250,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(12)),
+            gradient: LinearGradient(
+                begin: Alignment(-1.0, -4.0),
+                end: Alignment(1.0, 4.0),
+                colors: [
+                  start,
+                  end,
+                ]),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black54,
+                blurRadius: 5.0,
+              )
+            ]),
+        child: Column(children: [
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: kDefaultPadding / 4,
+                    vertical: kDefaultPadding / 2),
+                child: Text(
+                  header,
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: kDefaultPadding / 2),
-                  child: Row(
-                    children: [
-                      Text(
-                        text1,
-                        style: const TextStyle(
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        text2,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                        ),
-                      )
-                    ],
-                  ),
-                )
-              ],
-            )),
-            Column(
-              children: [
-                ElevatedButton.icon(
-                    onPressed: () {},
-                    icon: const Icon(Icons.add, size: 18),
-                    label: Text(btnText))
-              ],
-            )
-          ],
-        ),
+              )
+            ],
+          ),
+          Expanded(
+            child: Container(
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  GestureDetector(
+                      onTap: () {
+                        if (animationController.isAnimating) {
+                          animationController.reset();
+                        } else {
+                          animationController.repeat(reverse: true);
+                        }
+                      },
+                      child: AnimatedBuilder(
+                        animation: _animation,
+                        builder: (context, _) {
+                          double val = _animation.value;
+                          if (animationController.status ==
+                              AnimationStatus.reverse) {
+                            val = 1 - val;
+                          }
+                          return Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              gradient: LinearGradient(
+                                colors: [Color(0xFFff9966), Color(0xFFff5e62)],
+                                begin: Alignment(
+                                    cos(2 * pi * val), sin(2 * pi * val)),
+                                end: Alignment(
+                                    -cos(2 * pi * val), -sin(2 * pi * val)),
+                              ),
+                            ),
+                            child: CircleAvatar(
+                              radius: 70,
+                              backgroundColor: Colors.transparent,
+                              child: Text(
+                                animationController.isAnimating
+                                    ? Valbp.valer.toString()
+                                    : 'Last BPM',
+                                style: TextStyle(fontSize: 24),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          );
+                        },
+                      )),
+                ],
+              ),
+            ),
+          )
+        ]),
       ),
-    ),
-  );
+      Positioned(
+        top: 0,
+        left: 168,
+        child: MyArc(100),
+      ),
+      Positioned(
+        top: 8,
+        left: 128,
+        child: AnimatedBuilder(
+            animation: _animation,
+            builder: (context, _) {
+              return Transform(
+                transform: Matrix4.identity()..scale(1 + _animation.value / 10),
+                child: ImageIcon(AssetImage(imagePath)),
+              );
+            }),
+      )
+    ]);
+  }
 }
 
 class ProgressBar extends CustomPainter {
   Color lineColor;
-  int lineWidth;
-  int totalwidth;
-  ProgressBar(this.lineColor, this.lineWidth, this.totalwidth);
+  ProgressBar(this.lineColor);
 
   @override
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
-    double percent = lineWidth / totalwidth;
-    percent = percent > 1.0 ? 1.0 : percent;
+    double percent = 0.5;
     var paint = Paint()
       ..color = Colors.white38
       ..strokeWidth = 10.0
@@ -534,4 +493,69 @@ class ProgressBar extends CustomPainter {
     // TODO: implement shouldRepaint
     return false;
   }
+}
+
+class MyArc extends StatelessWidget {
+  final double diameter;
+
+  MyArc(this.diameter);
+
+  @override
+  Widget build(BuildContext context) {
+    return CustomPaint(
+      painter: MyPainter(),
+      size: Size(diameter, diameter),
+    );
+  }
+}
+
+// This is the Painter class
+class MyPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    Paint paint = Paint()..color = Colors.white;
+    canvas.drawArc(
+      Rect.fromCenter(
+        center: Offset(0.0, 0.0),
+        height: size.height,
+        width: size.width,
+      ),
+      pi / 2,
+      pi / 2,
+      true,
+      paint,
+    );
+  }
+
+  @override
+  bool shouldRepaint(CustomPainter oldDelegate) => false;
+}
+
+Widget MyAlert() {
+  return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
+      child: showAlert());
+}
+
+showAlert() {
+  // Create button
+  Widget okButton = FlatButton(
+    child: Text("Close"),
+    onPressed: () {
+      check = false;
+    },
+  );
+
+  // Create AlertDialog
+  AlertDialog alert = AlertDialog(
+    title: Text("Fall Alert Detected"),
+    content: Text(
+        "This is an fall detection alert.If nothing serious press close button."),
+    actions: [
+      okButton,
+    ],
+  );
+
+  // show the dialog
+  return alert;
 }

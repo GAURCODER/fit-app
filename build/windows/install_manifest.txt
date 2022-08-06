@@ -1,0 +1,12 @@
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/assets/images/logo.png
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/NOTICES
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/packages/fluttertoast/assets/toastify.css
+C:/Users/gaura/OneDrive/Desktop/fit-app/build/windows/runner/Debug/data/flutter_assets/packages/fluttertoast/assets/toastify.js
